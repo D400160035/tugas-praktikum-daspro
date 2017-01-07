@@ -1,0 +1,70 @@
+#include <stdio.h>
+int main ()
+{
+    int n[5];
+    int i;
+
+    n[0] = 200;
+    n[1] = 250;
+    n[2] = 350;
+    n[3] = 100;
+    n[4] = 300;
+
+
+    for ( i = 0; i < 5; i++)
+    {
+        printf ("Elemen ke- %d = %d\n", i, n[i]);
+    }
+    return 0;
+}
+
+//percobaan2
+#include <stdio.h>
+int main ()
+{
+    int n[] ={1,2,3,4,5};
+    int i;
+
+    for (i = 1; i < 5; i++)
+    {
+        printf ("Elemen ke- %d = %d\n",i, n[i]);
+    }
+    return 0;
+}
+//percobaan3
+#include <stdio.h>
+int main ()
+{
+    int A[5] [2]= {{0,0}, {1,2}, {2,4},{3,6},{4,8}};
+    int i, j;
+
+    for( i = 0; i < 5; i++)
+    {
+        for( j = 0; j < 2; j++)
+        {
+            printf(" Nilai A [%d] [%d] = %d\n", i ,j,A[i] [j]);
+        }
+    }
+    return 0;
+}
+//tugas
+#include <stdio.h>
+int main ()
+{
+    int A[5] [2];
+    int i, j;
+
+    for( i = 0; i < 5; i++)
+    {
+        for( j = 0; j < 2; j++)
+        {
+        scanf("%d", & A[i][j]);
+        }}
+         for( i = 0; i < 5; i++)
+    {
+        for( j = 0; j < 2; j++)
+        {
+        printf("Nilai A[%d,%d] = %d\n", i,j,A[i] [j]);
+    }}
+    return 0;
+}
