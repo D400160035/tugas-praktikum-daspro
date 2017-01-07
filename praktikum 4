@@ -1,0 +1,132 @@
+#include <stdio.h>
+int minimum ( int x, int y)
+{
+    if (x<y)
+        return (x);
+    else
+        return (y);
+}
+ void main()
+
+ {
+     int a, b, hasil;
+     printf (" masukkan 2 bil =\n");
+     scanf("%d %d",&a,&b);
+     hasil = minimum (a,b);
+     printf("nilai terkecil = %d\n", hasil);
+     //printf(" terkecil =%d, minimum(1,2));
+ }
+
+
+
+/*float cm2m(float cm);
+
+ void main ()
+ {
+     float tcm ,tm;
+     printf("tinggi badan (cm):");
+     scanf ("%f",& tcm);
+     tm=cm2m(tcm);
+     printf("tinggi badan dalam m = %.2f",tm);
+ }
+     float cm2m(float cm)
+ {
+     float m;
+     m= .01*cm;
+     return m;
+
+ }
+*/
+
+
+//tugas
+#include <stdio.h>
+#include <math.h>
+
+    int h1,h2,h3;
+    int total;
+    int kembali;
+    int tunai;
+    int z1,z2,z3;
+    int b1[200];
+    int b2[200];
+    int b3[200];
+    int harga1;
+    int harga2;
+    int harga3;
+    int total_bayar;
+    int discount;
+    float d;
+    float c;
+
+
+
+void input()
+{
+    printf("barang yang di beli:\n");
+    printf("\n 1. produk \t : ");
+    scanf("%s", &b1);
+    printf("\n jumlah \t : ");
+    scanf("%d", & z1);
+    printf("\n harga \t : ");
+    scanf("%d", & h1);
+    printf("\n 2. produk \t : ");
+    scanf("%s", &b2);
+    printf("\n jumlah \t : ");
+    scanf("%d", & z2);
+    printf("\n harga \t : ");
+    scanf("%d", & h2);
+    printf("\n 3. produk \t : ");
+    scanf("%s", &b3);
+    printf("\n jumlah \t : ");
+    scanf("%d", & z3);
+    printf("\n harga \t : ");
+    scanf("%d", & h3);
+    harga1= z1*h1;
+    harga2= z2*h2;
+    harga3= z3*h3;
+}
+void totalbayar()
+{
+    total=harga1+harga2+harga3;
+    printf(" Total : %d \t\n", total);
+    printf("\n Discount :\t");
+    scanf("%f", &d);
+    discount = total*(d/100);
+    printf("Discount : %d\t\n", discount);
+    total_bayar=total-discount;
+    printf("Total Bayar : %d\t\n", total_bayar);
+    printf("\n Tunai :");
+    scanf("%d", & tunai);
+    kembali= tunai-total_bayar;
+    printf("kembali: %d\t", kembali);
+}
+void isi()
+{
+    printf("\n  \n  \n");
+    printf("         Indomart\n");
+    printf(" Jl. Selatan Stasiun No.12\n");
+    printf("\n-------------------------------\n");
+    printf(" No.   NamaProduk    Jumlah    Harga (Rp)\n");
+    printf(" 1.      %s  \t    %d  \t     %d\n", b1,z1,harga1);
+    printf(" 2.      %s  \t    %d  \t     %d\n", b2,z2,harga2);
+    printf(" 3.      %s  \t    %d  \t     %d\n", b3,z3,harga3);
+    printf("\n-------------------------------\n");
+}
+
+void penutup()
+{
+    printf("\n-------------------------------\n");
+    printf("Barang yang dibeli tidak dapat\n");
+    printf("ditukar dikembalikan\n");
+    printf(" TERIMAKASIH.SELAMAT BELANJA KEMBALI\n");
+}
+void main()
+{
+    input();
+    system("cls");
+    isi();
+    totalbayar();
+    penutup();
+}
+
