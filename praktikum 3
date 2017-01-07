@@ -1,0 +1,90 @@
+//percobaan1
+#include <stdio.h>
+int main()
+{
+    int a;
+    for ( a=2; a <= 100 ;a=a+2)
+    {
+        printf("nilai dari a:%d\n",a);
+    }
+    return 0;
+}
+
+//percobaan2
+#include <stdio.h>
+int main()
+{
+    int a=100 ;
+    printf("Eksekusi Perulangan WHILE\n");
+    while (a>=1)
+    {
+        printf("nilai dari a:%d\n", a);
+        a--;
+    }
+    return 0;
+}
+//percobaan3
+#include <stdio.h>
+int main()
+{
+    int a=10;
+    printf("Eksekusi Perulangan DO-WHILE\n");
+    do
+    {
+        printf("nilai dari a:%d\n", a);
+        a++;
+    }
+    while( a < 15 );
+    return 0;
+}
+//percobaan4
+#include <stdio.h>
+int main()
+{
+    int i, j;
+    for (i=1; i<5; i++)
+    {
+        for(j=1; j<=4 ; j++)
+        {
+            printf("%d", i);
+        }
+        printf("\n");
+    }
+    return 0;
+}
+//tugas
+#include <stdio.h>
+int  main()
+{
+    int hasil= 1, bil;
+    int i;
+    int c;
+    bil=10;
+    c=0;
+
+     printf("10! faktorial \n");
+
+    for ( i = 1; i <= bil ; i++ )
+    {
+        c= c+1;
+        hasil= i*hasil;
+
+    printf("faktorial dari %d : %d\n", c, hasil);
+    }
+    return 0;
+}
+
+#include <stdio.h>
+int main()
+{
+    int i, j;
+    for(i=1; i<=5; i++)
+    {
+        for(j=1; j<=i; j++)
+        {
+            printf("%d",j);
+        }
+        printf("\n");
+    }
+    return 0;
+}
