@@ -1,0 +1,54 @@
+//percobaan 1
+#include<stdio.h>
+
+int main()
+{
+    int x;
+    printf("Simbol  | Desimal   | Hex   | Binary\n");
+    printf("------------------------------------\n");
+
+    for (x=48;x<=122; x++)
+    {
+        printf("ASCII %c     | %d     | %x    | Binary\n",x,x,x);
+    }
+
+    return 0;
+}
+
+
+//percobaan2
+#include <stdio.h>
+int main()
+{
+    int a, b;
+    int c;
+    float f;
+
+    a=10;
+
+    printf("Program Aritmatika 2 Variabel \n");
+    printf("Masukan Nilai b \n");
+    scanf ("%d",& b);
+    c=a+b;
+    printf("Nilai dari c=%d\n",c);
+    f=70.0/3.0;
+    printf("Nilai dari f=%f\n",f);
+    return 0;
+}
+//tugas
+#include <stdio.h>
+int main()
+{
+    float p,l, Luas;
+
+
+    printf("Program Menghitung Luas Persegi Panjang \n");
+    printf("Masukan Nilai p \n");
+    scanf ("%f",& p);
+    printf("Masukan Nilai l\n");
+    scanf("%f",& l);
+    Luas=p*l;
+    printf("Nilai dari f=%.2f\n",Luas);
+    return 0;
+}
+
