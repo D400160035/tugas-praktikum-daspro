@@ -1,0 +1,139 @@
+//percobaan1
+#include <stdio.h>
+int main()
+{
+    int x;
+    printf("Masukan nilai x:\n");
+    scanf("%d", & x);
+    if(x<30)
+    {
+        printf("%d lebih kecil dari 30\n",x);
+    }
+    printf("nilai x sebenarnya: %d\n");
+    return 0;
+}
+
+//percobaan2
+#include <stdio.h>
+int main()
+{
+    int x;
+    printf("Masukan nilai x:\n");
+    scanf("%d", & x);
+    if(x<20)
+    {
+        printf("%d lebih kecil dari 20\n",x);
+    }
+    else
+    {
+        printf("%d tidak lebihkecil dari 20\n", x);
+    }
+    printf("nilai x adalah: %d\n");
+    return 0;
+}
+
+//precobaan3
+#include <stdio.h>
+int main()
+{
+    int abs;
+    printf("Masukan Presensi Kehadiran:\n");
+    scanf("%d", & abs);
+    int uas;
+    printf("Masukan hasil uas:\n");
+    scanf("%d", & uas);
+    if(abs>70)
+    {
+        if (uas>50)
+        {
+          printf("Anda Lulus\n");
+        }
+
+    }
+    printf("Presensi kehadiran: %d\n",abs);
+    printf("hasil uas :%d\n",uas);
+    return 0;
+}
+
+//percobaan4
+#include<stdio.h>
+int main()
+{
+    char hasilujian='A';
+    switch(hasilujian)
+    {
+    case 'A':
+        printf("Sangat Baik!\n");
+        break;
+    case 'B':
+    case 'C':
+        printf("Baik!\n");
+        break;
+    case 'D':
+        printf("Cukup!\n");
+        break;
+    case 'F':
+        printf("Sebaiknya coba lagi!\n");
+        break;
+    default:
+        printf("Gagal\n");
+    }
+    printf("Nilai Anda adalah %c\n", hasilujian);
+    return 0;
+}
+
+//tugas
+#include <stdio.h>
+int main()
+{
+    int abs;
+    printf("Masukan Presensi Kehadiran:\n");
+    scanf("%d", & abs);
+    int uas;
+    printf("Masukan hasil uas:\n");
+    scanf("%d", & uas);
+
+    if(abs>70)
+    {
+        if (uas>50)
+        {
+          printf("Anda Lulus\n");
+        }
+
+    }
+    else
+    {
+        printf("Anda Gagal\n");
+    }
+    printf("Presensi kehadiran: %d\n",abs);
+    printf("hasil uas :%d\n",uas);
+    return 0;
+}
+
+#include<stdio.h>
+int main()
+{
+    char hasilujian ;
+    { printf("hasilujian=\n");
+    scanf("%c", & hasilujian);
+    }
+    switch(hasilujian)
+    {
+    case 'A':
+        printf("Sangat Baik!\n");
+        break;
+    case 'B':
+    case 'C':
+        printf("Baik!\n");
+        break;
+    case 'D':
+        printf("Cukup!\n");
+        break;
+    case 'F':
+        printf("Sebaiknya coba lagi!\n");
+        break;
+    default:
+        printf("Gagal\n");
+    }
+    printf("Nilai Anda adalah %c\n", hasilujian);
+    return 0; }
